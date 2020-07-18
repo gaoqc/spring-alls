@@ -1,0 +1,9 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: user-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://euk1:8082/eureka,http://euk1:8083/eureka
