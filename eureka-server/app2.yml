@@ -1,0 +1,13 @@
+server:
+  port: 8082
+eureka:
+  instance:
+    hostname: euk2
+    virtual-host-name: euk
+  client:
+    service-url:
+      defaultZone: http://euk1:8081/eureka,http://euk1:8083/eureka
+
+spring:
+  application:
+    name: euk

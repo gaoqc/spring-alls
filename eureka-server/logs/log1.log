@@ -1,0 +1,127 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-07-18 17:21:40.287  INFO 71129 --- [           main] com.sc.uka.serv.SpringAllApplication     : No active profile set, falling back to default profiles: default
+2020-07-18 17:21:43.713  WARN 71129 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-18 17:21:44.112  INFO 71129 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44de69be-4438-3bb9-b908-f4c8a27e7391
+2020-07-18 17:21:44.869  INFO 71129 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-07-18 17:21:44.885  INFO 71129 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-18 17:21:44.886  INFO 71129 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-18 17:21:44.988  INFO 71129 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-18 17:21:44.989  INFO 71129 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4481 ms
+2020-07-18 17:21:45.167  WARN 71129 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-18 17:21:45.167  INFO 71129 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-18 17:21:45.211  INFO 71129 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@59d2103b
+2020-07-18 17:21:45.882  INFO 71129 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-07-18 17:21:46.045  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-18 17:21:46.048  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-18 17:21:46.425  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-18 17:21:46.425  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-18 17:21:47.230  WARN 71129 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-18 17:21:47.231  INFO 71129 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-18 17:21:47.910  INFO 71129 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-18 17:21:48.778  WARN 71129 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-18 17:21:48.883  INFO 71129 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-18 17:21:49.055  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-18 17:21:49.313  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-18 17:21:49.313  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-18 17:21:49.313  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-18 17:21:49.313  INFO 71129 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-18 17:21:49.469  INFO 71129 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-18 17:21:49.498  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-18 17:21:49.498  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-18 17:21:49.498  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-18 17:21:49.498  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-18 17:21:49.498  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-18 17:21:49.498  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-18 17:21:49.499  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-18 17:21:49.704  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-18 17:21:49.708  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-18 17:21:49.712  INFO 71129 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-18 17:21:49.718  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595064109715 with initial instances count: 7
+2020-07-18 17:21:49.785  INFO 71129 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-07-18 17:21:49.787  WARN 71129 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2020-07-18 17:21:49.799  INFO 71129 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-07-18 17:21:49.800  INFO 71129 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-07-18 17:21:49.819  INFO 71129 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-18 17:21:49.850  INFO 71129 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUK with eureka with status UP
+2020-07-18 17:21:49.850  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595064109850, current=UP, previous=STARTING]
+2020-07-18 17:21:49.852  INFO 71129 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.31.180:euk:8081: registering service...
+2020-07-18 17:21:49.854  INFO 71129 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-07-18 17:21:49.854  INFO 71129 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-07-18 17:21:49.855  INFO 71129 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-07-18 17:21:49.874  INFO 71129 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-07-18 17:21:49.875  INFO 71129 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-07-18 17:21:49.879  WARN 71129 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2020-07-18 17:21:49.879  INFO 71129 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-07-18 17:21:49.880  INFO 71129 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.31.180:user-provider:8087 with status UP (replication=true)
+2020-07-18 17:21:49.881  INFO 71129 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.31.180:user-provider:8088 with status UP (replication=true)
+2020-07-18 17:21:49.882  INFO 71129 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.31.180:user-provider:8089 with status UP (replication=true)
+2020-07-18 17:21:49.882  INFO 71129 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-SERVER/192.168.31.180:zuul-server:80 with status UP (replication=true)
+2020-07-18 17:21:49.883  INFO 71129 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.31.180:euk:8081 with status UP (replication=true)
+2020-07-18 17:21:49.883  INFO 71129 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.31.180:euk:8083 with status UP (replication=true)
+2020-07-18 17:21:49.883  INFO 71129 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.31.180:euk:8082 with status UP (replication=true)
+2020-07-18 17:21:49.883  INFO 71129 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 7 instances from neighboring DS node
+2020-07-18 17:21:49.883  INFO 71129 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 11
+2020-07-18 17:21:49.884  INFO 71129 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-07-18 17:21:49.886  INFO 71129 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.31.180:euk:8081 - registration status: 204
+2020-07-18 17:21:49.888 ERROR 71129 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Cannot bootstrap eureka server :
+
+java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:398) ~[na:na]
+	at java.base/java.util.Timer.schedule(Timer.java:249) ~[na:na]
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1218) ~[eureka-core-1.9.21.jar!/:1.9.21]
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:256) ~[eureka-core-1.9.21.jar!/:1.9.21]
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:79) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:157) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:84) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:70) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at java.base/java.lang.Thread.run(Thread.java:835) ~[na:na]
+
+2020-07-18 17:21:49.888 ERROR 71129 --- [     Thread-383] e.s.EurekaServerInitializerConfiguration : Could not initialize Eureka servlet context
+
+java.lang.RuntimeException: Cannot bootstrap eureka server :
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:90) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:70) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at java.base/java.lang.Thread.run(Thread.java:835) ~[na:na]
+Caused by: java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:398) ~[na:na]
+	at java.base/java.util.Timer.schedule(Timer.java:249) ~[na:na]
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1218) ~[eureka-core-1.9.21.jar!/:1.9.21]
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:256) ~[eureka-core-1.9.21.jar!/:1.9.21]
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:79) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:157) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:84) ~[spring-cloud-netflix-eureka-server-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+	... 2 common frames omitted
+
+2020-07-18 17:21:49.893  INFO 71129 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2020-07-18 17:21:49.896  WARN 71129 --- [           main] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException
+2020-07-18 17:21:49.897  INFO 71129 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-18 17:21:49.899  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-07-18 17:21:52.902  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-07-18 17:21:52.909  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.31.180:euk:8081 - deregister  status: 200
+2020-07-18 17:21:52.922  INFO 71129 --- [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-07-18 17:21:52.924  INFO 71129 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-18 17:21:52.940  INFO 71129 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-18 17:21:52.943 ERROR 71129 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
