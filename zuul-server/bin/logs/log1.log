@@ -1,0 +1,418 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-07-09 01:22:47.108  INFO [zuul-server,,,] 51852 --- [           main] c.sc.zuul.server.ZuulServerApplication   : No active profile set, falling back to default profiles: default
+2020-07-09 01:22:47.534  WARN [zuul-server,,,] 51852 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-07-09 01:22:48.331  WARN [zuul-server,,,] 51852 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-09 01:22:48.655  INFO [zuul-server,,,] 51852 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e5126824-968e-38bc-877b-17b809243655
+2020-07-09 01:22:49.486  INFO [zuul-server,,,] 51852 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-07-09 01:22:49.506  INFO [zuul-server,,,] 51852 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-09 01:22:49.506  INFO [zuul-server,,,] 51852 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-09 01:22:49.572  INFO [zuul-server,,,] 51852 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-09 01:22:49.572  INFO [zuul-server,,,] 51852 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2435 ms
+2020-07-09 01:22:49.768  WARN [zuul-server,,,] 51852 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-09 01:22:49.768  INFO [zuul-server,,,] 51852 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-09 01:22:49.783  INFO [zuul-server,,,] 51852 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1cefc4b3
+2020-07-09 01:22:50.823  INFO [zuul-server,,,] 51852 --- [           main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-07-09 01:22:50.875  WARN [zuul-server,,,] 51852 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-09 01:22:50.875  INFO [zuul-server,,,] 51852 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-09 01:22:51.251  INFO [zuul-server,,,] 51852 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 01:22:51.743  INFO [zuul-server,,,] 51852 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-09 01:22:51.926  WARN [zuul-server,,,] 51852 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-09 01:22:52.157  INFO [zuul-server,,,] 51852 --- [           main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2020-07-09 01:22:52.237  INFO [zuul-server,,,] 51852 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 7 endpoint(s) beneath base path '/actuator'
+2020-07-09 01:22:52.277  INFO [zuul-server,,,] 51852 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-09 01:22:52.349  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-09 01:22:52.405  INFO [zuul-server,,,] 51852 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-09 01:22:52.405  INFO [zuul-server,,,] 51852 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-09 01:22:52.562  INFO [zuul-server,,,] 51852 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-09 01:22:52.563  INFO [zuul-server,,,] 51852 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-09 01:22:52.742  INFO [zuul-server,,,] 51852 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 01:22:52.766  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-09 01:22:52.766  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-09 01:22:52.766  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-09 01:22:52.766  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-09 01:22:52.766  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-09 01:22:52.766  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-09 01:22:52.766  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-09 01:22:52.912  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-09 01:22:52.915  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-09 01:22:52.918  INFO [zuul-server,,,] 51852 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-09 01:22:52.921  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1594228972920 with initial instances count: 8
+2020-07-09 01:22:52.930  INFO [zuul-server,,,] 51852 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZUUL-SERVER with eureka with status UP
+2020-07-09 01:22:52.930  INFO [zuul-server,,,] 51852 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1594228972930, current=UP, previous=STARTING]
+2020-07-09 01:22:52.932  INFO [zuul-server,,,] 51852 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER/192.168.31.180:zuul-server:80: registering service...
+2020-07-09 01:22:52.960  INFO [zuul-server,,,] 51852 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER/192.168.31.180:zuul-server:80 - registration status: 204
+2020-07-09 01:22:52.960  INFO [zuul-server,,,] 51852 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-07-09 01:22:52.961  INFO [zuul-server,,,] 51852 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 80
+2020-07-09 01:22:52.986  INFO [zuul-server,,,] 51852 --- [           main] c.sc.zuul.server.ZuulServerApplication   : Started ZuulServerApplication in 6.932 seconds (JVM running for 7.506)
+2020-07-09 01:22:53.070  INFO [zuul-server,,,] 51852 --- [gistrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 0af0993f3112
+2020-07-09 01:22:53.115  INFO [zuul-server,,,] 51852 --- [p-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-09 01:22:53.115  INFO [zuul-server,,,] 51852 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-09 01:22:53.130  INFO [zuul-server,,,] 51852 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-07-09 01:27:52.776  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 01:32:52.789  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 01:37:52.802  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 01:42:52.818  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 01:47:52.834  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 01:52:52.845  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 01:57:52.854  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:02:52.873  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:07:52.889  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:12:52.901  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:17:52.919  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:22:52.939  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:27:52.956  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:32:52.968  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:37:52.982  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:42:52.994  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:47:53.004  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:52:53.018  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 02:57:53.024  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:02:53.036  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:07:53.049  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:12:53.057  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:17:53.074  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:22:53.082  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:27:53.096  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:32:53.113  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:37:53.128  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:42:53.136  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:47:53.152  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:52:53.162  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 03:57:53.176  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:02:53.193  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:07:53.210  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:12:53.222  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:17:53.235  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:22:53.254  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:27:53.264  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:32:53.279  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:37:53.291  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:42:53.303  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:47:53.319  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:52:53.326  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 04:57:53.338  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:02:53.350  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:07:53.362  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:12:53.371  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:17:53.388  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:22:53.404  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:27:53.419  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:32:53.437  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:37:53.445  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:42:53.456  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:47:53.466  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:52:53.472  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 05:57:53.480  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:02:53.492  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:07:53.498  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:12:53.514  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:17:53.524  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:22:53.534  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:27:53.547  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:32:53.561  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:37:53.577  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:42:53.589  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:47:53.604  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:52:53.611  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 06:57:53.621  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:02:53.634  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:07:53.644  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:12:53.656  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:17:53.664  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:22:53.677  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:27:53.688  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:32:53.701  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:37:53.717  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:42:53.733  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:47:53.748  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:52:53.760  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 07:57:53.770  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 08:02:53.785  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 08:07:53.800  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 16:37:29.453  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 22:55:46.180  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:00:46.182  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:05:46.187  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:10:46.224  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:15:46.229  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:16:35.833  WARN [zuul-server,,,] 51852 --- [gistrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=zuul-server, managementUrl=http://192.168.2.1:80/actuator, healthUrl=http://192.168.2.1:80/actuator/health, serviceUrl=http://192.168.2.1:80/) at spring-boot-admin ([http://127.0.0.1:8099//instances]): I/O error on POST request for "http://127.0.0.1:8099/instances": Connect to 127.0.0.1:8099 [/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8099 [/127.0.0.1] failed: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2020-07-09 23:20:46.234  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:25:46.237  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:30:46.243  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:35:46.251  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:40:46.253  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:45:46.256  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:54:00.297  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-09 23:59:00.308  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:04:00.315  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:09:00.322  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:14:00.334  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:19:00.339  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:29:46.058  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:34:46.070  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:39:46.078  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:44:46.087  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:49:46.098  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 00:54:46.111  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 10:34:27.585  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 10:39:27.590  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-10 10:44:27.600  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:02:07.507  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:07:07.516  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:12:07.519  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:24:01.239  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:29:01.245  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:34:01.252  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:39:01.259  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:44:01.264  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:49:01.270  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:54:01.280  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 17:59:01.327  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 18:04:01.341  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 18:09:01.351  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 18:14:01.359  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:09:43.431  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:14:43.436  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:19:43.445  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:24:43.447  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:29:43.450  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:34:43.454  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:39:43.502  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:44:43.506  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:49:43.531  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:54:43.539  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-11 23:59:43.549  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:04:43.561  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:09:43.582  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:14:43.593  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:19:43.605  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:24:43.619  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:29:43.665  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:34:43.684  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:39:43.707  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:44:43.720  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:49:43.738  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:54:43.754  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 00:59:43.766  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 01:04:43.782  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 01:09:43.798  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 01:14:43.814  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 01:19:43.824  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 01:24:43.838  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 01:29:43.850  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 01:34:43.868  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:00:49.300  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:05:49.316  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:10:49.322  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:15:49.331  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:20:49.362  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:25:49.369  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:30:49.380  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:35:49.388  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:40:49.396  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:45:49.403  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:50:49.417  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 16:55:49.455  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 17:00:49.469  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 17:05:49.480  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 17:10:49.493  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 17:15:49.506  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 17:20:49.520  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 22:49:19.881  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 22:54:19.889  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 22:59:19.895  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:04:19.907  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:09:19.914  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:14:19.918  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:19:19.923  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:24:19.929  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:29:19.983  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:34:19.996  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:39:20.007  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:44:20.016  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:49:20.030  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:54:20.041  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-12 23:59:20.076  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:13:47.066  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:18:47.088  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:23:47.098  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:28:47.116  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:33:47.132  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:38:47.150  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:43:47.168  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:48:47.183  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:53:47.196  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 00:58:47.210  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:03:47.222  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:08:47.237  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:13:47.250  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:18:47.265  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:23:47.282  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:28:47.298  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:33:47.311  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:38:47.325  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:43:47.344  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:48:47.368  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:53:47.389  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 01:58:47.409  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:03:47.420  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:08:47.435  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:13:47.457  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:18:47.470  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:23:47.484  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:28:47.506  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:33:47.516  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:38:47.533  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:43:47.549  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:48:47.569  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:53:47.589  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 02:58:47.602  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:03:47.622  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:08:47.641  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:13:47.657  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:18:47.672  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:23:47.689  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:28:47.706  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:33:47.726  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:38:47.744  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:43:47.768  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:48:47.790  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:53:47.808  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 03:58:47.825  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:03:47.842  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:08:47.863  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:13:47.880  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:18:47.897  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:23:47.913  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:28:47.928  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:33:47.949  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:38:47.963  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:43:47.973  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:48:47.990  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:53:48.009  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 04:58:48.022  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:03:48.036  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:08:48.049  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:13:48.066  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:18:48.082  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:23:48.095  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:28:48.110  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:33:48.131  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:38:48.148  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:43:48.167  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:48:48.177  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:53:48.197  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 05:58:48.214  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:03:48.229  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:08:48.247  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:13:48.266  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:18:48.280  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:23:48.294  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:28:48.312  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:33:48.322  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:38:48.337  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:43:48.356  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:48:48.368  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:53:48.385  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 06:58:48.402  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:03:48.416  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:08:48.430  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:13:48.445  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:18:48.456  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:23:48.467  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:28:48.484  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:33:48.502  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:38:48.517  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:43:48.533  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:48:48.552  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:53:48.570  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 07:58:48.589  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 08:03:48.598  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-13 09:20:59.874  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-14 23:53:30.642  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-14 23:58:30.659  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:03:30.663  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:08:30.636  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:13:30.643  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:18:30.652  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:23:30.655  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:28:30.660  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:33:30.713  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:38:30.727  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:43:30.741  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:48:30.755  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:53:30.770  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 00:58:30.784  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:03:30.798  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:08:30.813  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:13:30.831  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:18:30.850  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:23:30.863  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:28:30.880  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:33:30.890  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:38:30.901  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:43:30.913  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 01:48:30.924  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 02:08:59.742  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 09:36:41.836  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 09:41:41.850  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 09:46:41.848  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 09:51:41.849  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 09:56:41.861  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:01:41.863  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:06:41.897  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:11:41.902  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:16:41.907  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:21:41.917  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:26:41.940  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:31:41.946  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:36:41.948  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:41:41.953  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:46:41.956  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:51:41.967  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 10:56:41.973  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:01:42.009  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:06:42.017  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:11:42.023  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:16:42.028  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:21:42.038  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:26:42.043  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:31:42.063  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 11:43:37.769  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:24:26.432  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:29:26.436  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:34:26.454  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:39:26.457  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:44:26.462  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:49:26.463  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:54:26.466  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-15 23:59:26.468  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:04:26.521  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:09:26.536  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:14:26.541  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:19:26.551  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:24:26.556  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:29:26.568  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:34:26.579  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:39:26.593  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:44:26.614  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:49:26.625  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:54:26.639  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 00:59:26.647  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 01:04:26.661  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 01:09:26.670  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 13:13:35.288  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 23:00:36.494  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 23:05:36.500  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 23:10:36.501  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 23:15:36.509  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 23:20:36.515  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-16 23:25:36.514  INFO [zuul-server,,,] 51852 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

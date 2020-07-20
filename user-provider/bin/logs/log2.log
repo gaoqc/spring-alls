@@ -46,3 +46,24 @@
 2020-07-21 00:56:57.638  INFO [user-provider,,,] 4952 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8088
 2020-07-21 00:56:57.644  INFO [user-provider,,,] 4952 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROVIDER/192.168.2.1:user-provider:8088 - registration status: 204
 2020-07-21 00:56:57.665  INFO [user-provider,,,] 4952 --- [           main] c.s.u.provider.UserProviderApplication   : Started UserProviderApplication in 10.43 seconds (JVM running for 11.713)
+2020-07-21 01:01:57.372  INFO [user-provider,,,] 4952 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-21 01:06:57.386  INFO [user-provider,,,] 4952 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-21 01:11:54.241  INFO [user-provider,,,] 4952 --- [nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 01:11:54.242  INFO [user-provider,,,] 4952 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-21 01:11:54.277  INFO [user-provider,,,] 4952 --- [nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+=============id100
+=============id100
+=============id100
+=============id100
+=============id100
+=============id100
+=============id100
+2020-07-21 01:11:57.400  INFO [user-provider,,,] 4952 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-21 01:16:57.409  INFO [user-provider,,,] 4952 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+=============id100
+=============id100
+=============id100
+=============id100
+=============id100
+=============id100
+=============id100
