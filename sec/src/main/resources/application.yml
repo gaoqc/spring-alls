@@ -1,0 +1,9 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: sec
+  security:
+    user:
+      name: gaoqc
+      password: 111

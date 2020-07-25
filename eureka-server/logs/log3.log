@@ -7,41 +7,41 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.1.RELEASE)
 
-2020-07-21 00:52:24.696  INFO 4461 --- [           main] com.sc.uka.serv.SpringAllApplication     : No active profile set, falling back to default profiles: default
-2020-07-21 00:52:26.421  WARN 4461 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-21 00:52:26.671  INFO 4461 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44de69be-4438-3bb9-b908-f4c8a27e7391
-2020-07-21 00:52:27.312  INFO 4461 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2020-07-21 00:52:27.326  INFO 4461 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-21 00:52:27.326  INFO 4461 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-07-21 00:52:27.423  INFO 4461 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-21 00:52:27.423  INFO 4461 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2690 ms
-2020-07-21 00:52:27.558  WARN 4461 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-07-21 00:52:27.558  INFO 4461 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-07-21 00:52:27.583  INFO 4461 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@59d2103b
-2020-07-21 00:52:28.171  INFO 4461 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
-2020-07-21 00:52:28.289  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-07-21 00:52:28.291  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-07-21 00:52:28.581  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-07-21 00:52:28.582  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-07-21 00:52:29.259  WARN 4461 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-07-21 00:52:29.260  INFO 4461 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-07-21 00:52:29.743  INFO 4461 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-21 00:52:30.453  WARN 4461 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-07-21 00:52:30.522  INFO 4461 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-07-21 00:52:30.649  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-07-21 00:52:30.951  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-07-21 00:52:30.951  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-07-21 00:52:30.951  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-07-21 00:52:30.951  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-07-21 00:52:31.123  INFO 4461 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-07-21 00:52:31.159  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-07-21 00:52:31.159  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-07-21 00:52:31.159  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-07-21 00:52:31.159  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-07-21 00:52:31.159  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-07-21 00:52:31.160  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-07-21 00:52:31.160  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-07-21 00:52:31.309 ERROR 4461 --- [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://euk1:8082/eureka/}
+2020-07-25 09:42:11.743  INFO 10741 --- [           main] com.sc.uka.serv.SpringAllApplication     : No active profile set, falling back to default profiles: default
+2020-07-25 09:42:13.525  WARN 10741 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-25 09:42:13.766  INFO 10741 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44de69be-4438-3bb9-b908-f4c8a27e7391
+2020-07-25 09:42:14.297  INFO 10741 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2020-07-25 09:42:14.309  INFO 10741 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-25 09:42:14.309  INFO 10741 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-25 09:42:14.391  INFO 10741 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-25 09:42:14.391  INFO 10741 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2598 ms
+2020-07-25 09:42:14.529  WARN 10741 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-25 09:42:14.529  INFO 10741 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-25 09:42:14.558  INFO 10741 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2cb3d0f7
+2020-07-25 09:42:15.115  INFO 10741 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-07-25 09:42:15.235  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-25 09:42:15.238  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-25 09:42:15.478  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-25 09:42:15.479  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-25 09:42:16.090  WARN 10741 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-25 09:42:16.090  INFO 10741 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-25 09:42:16.556  INFO 10741 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-25 09:42:17.235  WARN 10741 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-25 09:42:17.306  INFO 10741 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-25 09:42:17.443  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-25 09:42:17.686  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-25 09:42:17.686  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-25 09:42:17.686  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-25 09:42:17.686  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-25 09:42:17.868  INFO 10741 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 09:42:17.899  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-25 09:42:17.899  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-25 09:42:17.899  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-25 09:42:17.899  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-25 09:42:17.900  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-25 09:42:17.900  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-25 09:42:17.900  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-25 09:42:18.032 ERROR 10741 --- [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://euk1:8082/eureka/}
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
@@ -173,8 +173,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
 	... 109 common frames omitted
 
-2020-07-21 00:52:31.310  WARN 4461 --- [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2020-07-21 00:52:31.314 ERROR 4461 --- [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://euk1:8081/eureka/}
+2020-07-25 09:42:18.033  WARN 10741 --- [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2020-07-25 09:42:18.037 ERROR 10741 --- [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://euk1:8081/eureka/}
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
@@ -306,8 +306,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
 	... 109 common frames omitted
 
-2020-07-21 00:52:31.314  WARN 4461 --- [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2020-07-21 00:52:31.315 ERROR 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083 - was unable to refresh its cache! status = Cannot execute request on any known server
+2020-07-25 09:42:18.038  WARN 10741 --- [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2020-07-25 09:42:18.040 ERROR 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083 - was unable to refresh its cache! status = Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.21.jar!/:1.9.21]
@@ -404,154 +404,146 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[euk-ser.jar:0.0.1-SNAPSHOT]
 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[euk-ser.jar:0.0.1-SNAPSHOT]
 
-2020-07-21 00:52:31.317  WARN 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
-2020-07-21 00:52:31.321  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-07-21 00:52:31.325  INFO 4461 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-07-21 00:52:31.330  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595263951328 with initial instances count: 0
-2020-07-21 00:52:31.388  INFO 4461 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2020-07-21 00:52:31.390  INFO 4461 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://euk1:8081/eureka/, http://euk1:8082/eureka/]
-2020-07-21 00:52:31.398  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-07-21 00:52:31.398  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-07-21 00:52:31.398  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-07-21 00:52:31.398  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-07-21 00:52:31.567  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-07-21 00:52:31.567  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-07-21 00:52:31.567  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-07-21 00:52:31.567  INFO 4461 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-07-21 00:52:31.645  INFO 4461 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://euk1:8081/eureka/
-2020-07-21 00:52:31.645  INFO 4461 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://euk1:8082/eureka/
-2020-07-21 00:52:31.656  INFO 4461 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2020-07-21 00:52:31.657  INFO 4461 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2020-07-21 00:52:31.675  INFO 4461 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-07-21 00:52:31.706  INFO 4461 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUK with eureka with status UP
-2020-07-21 00:52:31.707  INFO 4461 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595263951707, current=UP, previous=STARTING]
-2020-07-21 00:52:31.709  INFO 4461 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083: registering service...
-2020-07-21 00:52:31.711  INFO 4461 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
-2020-07-21 00:52:31.712  INFO 4461 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
-2020-07-21 00:52:31.713  INFO 4461 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
-2020-07-21 00:52:31.717 ERROR 4461 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://euk1:8082/eureka/}
-
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:57) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:857) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.9.21.jar!/:1.9.21]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:835) ~[na:na]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar!/:4.5.12]
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
-	... 29 common frames omitted
-
-2020-07-21 00:52:31.718  WARN 4461 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2020-07-21 00:52:31.731  INFO 4461 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2020-07-21 00:52:31.732  INFO 4461 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2020-07-21 00:52:31.758  INFO 4461 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2020-07-21 00:52:31.759  INFO 4461 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
-2020-07-21 00:52:31.813  INFO 4461 --- [           main] com.sc.uka.serv.SpringAllApplication     : Started SpringAllApplication in 9.148 seconds (JVM running for 10.194)
-2020-07-21 00:52:31.852  INFO 4461 --- [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-21 00:52:31.852  INFO 4461 --- [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-21 00:52:31.861  INFO 4461 --- [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-21 00:52:31.954  INFO 4461 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8082 with status UP (replication=false)
-2020-07-21 00:52:32.007  INFO 4461 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #1
-2020-07-21 00:52:32.008  INFO 4461 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083 - registration status: 204
-2020-07-21 00:53:01.327  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-07-21 00:53:01.329  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-07-21 00:53:01.329  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-07-21 00:53:01.329  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-07-21 00:53:01.329  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-07-21 00:53:01.329  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-07-21 00:53:01.329  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-07-21 00:53:01.372  WARN 4461 --- [nio-8083-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: EUK - 192.168.2.1:euk:8081
-2020-07-21 00:53:01.372  WARN 4461 --- [nio-8083-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Renew): EUK - 192.168.2.1:euk:8081
-2020-07-21 00:53:01.382  INFO 4461 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-07-21 00:53:01.403  INFO 4461 --- [nio-8083-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8081 with status UP (replication=false)
-2020-07-21 00:53:01.740  INFO 4461 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8082 with status UP (replication=true)
-2020-07-21 00:53:01.740  INFO 4461 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2020-07-21 00:53:01.740  INFO 4461 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2020-07-21 00:53:01.740  INFO 4461 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2020-07-21 00:53:01.757  INFO 4461 --- [     Thread-383] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2020-07-21 00:53:19.537  INFO 4461 --- [nio-8083-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8089 with status UP (replication=false)
-2020-07-21 00:53:20.117  INFO 4461 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8088 with status UP (replication=false)
-2020-07-21 00:53:20.190  INFO 4461 --- [nio-8083-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8087 with status UP (replication=false)
-2020-07-21 00:54:01.745  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-07-21 00:55:01.749  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-07-21 00:56:01.750  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 00:56:57.563  INFO 4461 --- [nio-8083-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8089 with status UP (replication=false)
-2020-07-21 00:56:57.642  INFO 4461 --- [nio-8083-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8088 with status UP (replication=false)
-2020-07-21 00:56:57.649  INFO 4461 --- [nio-8083-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8087 with status UP (replication=false)
-2020-07-21 00:57:01.755  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-07-21 00:57:31.166  INFO 4461 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-07-21 00:58:01.758  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2020-07-21 00:59:01.759  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-07-21 01:00:01.763  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2020-07-21 01:01:01.793  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 01:02:01.815  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 01:02:31.220  INFO 4461 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-07-21 01:03:01.817  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 01:04:01.822  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2020-07-21 01:05:01.828  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-07-21 01:06:01.830  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 01:07:01.731  INFO 4461 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083 - Re-registering apps/EUK
-2020-07-21 01:07:01.731  INFO 4461 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083: registering service...
-2020-07-21 01:07:01.751  INFO 4461 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083 - registration status: 204
-2020-07-21 01:07:01.832  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 01:07:02.295  INFO 4461 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8083 with status UP (replication=true)
-2020-07-21 01:07:31.230  INFO 4461 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-07-21 01:07:31.713  INFO 4461 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
-2020-07-21 01:08:01.834  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-07-21 01:09:01.835  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-07-21 01:10:01.838  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 01:10:55.280  INFO 4461 --- [nio-8083-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONSUMER/192.168.2.1:consumer:9000 with status UP (replication=false)
-2020-07-21 01:11:01.843  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-07-21 01:12:01.848  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-07-21 01:12:31.237  INFO 4461 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-07-21 01:13:01.851  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2020-07-21 01:14:01.853  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-07-21 01:15:01.856  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2020-07-21 01:16:01.859  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2020-07-21 01:16:24.034  INFO 4461 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-SERVER/192.168.2.1:zuul-server:80 with status UP (replication=false)
-2020-07-21 01:17:01.865  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-07-21 01:17:17.421  INFO 4461 --- [nio-8083-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-SERVER/192.168.2.1:zuul-server:80 with status DOWN (replication=false)
-2020-07-21 01:17:20.501  INFO 4461 --- [io-8083-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ZUUL-SERVER/192.168.2.1:zuul-server:80 (replication=false)
-2020-07-21 01:17:28.565  INFO 4461 --- [nio-8083-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-SERVER/192.168.2.1:zuul-server:80 with status UP (replication=false)
-2020-07-21 01:17:31.246  INFO 4461 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-07-21 01:18:01.865  INFO 4461 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 09:42:18.044  WARN 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2020-07-25 09:42:18.046  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-25 09:42:18.049  INFO 10741 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-25 09:42:18.054  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595641338053 with initial instances count: 0
+2020-07-25 09:42:18.108  INFO 10741 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-07-25 09:42:18.109  INFO 10741 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://euk1:8081/eureka/, http://euk1:8082/eureka/]
+2020-07-25 09:42:18.115  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-25 09:42:18.115  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-25 09:42:18.116  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-25 09:42:18.116  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-25 09:42:18.257  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-25 09:42:18.257  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-25 09:42:18.257  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-25 09:42:18.258  INFO 10741 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-25 09:42:18.332  INFO 10741 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://euk1:8081/eureka/
+2020-07-25 09:42:18.332  INFO 10741 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://euk1:8082/eureka/
+2020-07-25 09:42:18.346  INFO 10741 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-07-25 09:42:18.347  INFO 10741 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-07-25 09:42:18.363  INFO 10741 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-25 09:42:18.393  INFO 10741 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUK with eureka with status UP
+2020-07-25 09:42:18.394  INFO 10741 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595641338394, current=UP, previous=STARTING]
+2020-07-25 09:42:18.397  INFO 10741 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083: registering service...
+2020-07-25 09:42:18.398  INFO 10741 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-07-25 09:42:18.399  INFO 10741 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-07-25 09:42:18.400  INFO 10741 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-07-25 09:42:18.427  INFO 10741 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-07-25 09:42:18.428  INFO 10741 --- [     Thread-383] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-07-25 09:42:18.453  INFO 10741 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2020-07-25 09:42:18.453  INFO 10741 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2020-07-25 09:42:18.505  INFO 10741 --- [           main] com.sc.uka.serv.SpringAllApplication     : Started SpringAllApplication in 8.715 seconds (JVM running for 9.578)
+2020-07-25 09:42:18.664  INFO 10741 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUK/192.168.2.1:euk:8083 - registration status: 204
+2020-07-25 09:42:19.204  INFO 10741 --- [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-25 09:42:19.204  INFO 10741 --- [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-25 09:42:19.211  INFO 10741 --- [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-25 09:42:19.282  INFO 10741 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8083 with status UP (replication=true)
+2020-07-25 09:42:37.897  INFO 10741 --- [nio-8083-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8088 with status UP (replication=false)
+2020-07-25 09:42:37.914  INFO 10741 --- [nio-8083-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USER-PROVIDER/192.168.2.1:user-provider:8088 (replication=false)
+2020-07-25 09:42:37.925  INFO 10741 --- [nio-8083-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8089 with status UP (replication=false)
+2020-07-25 09:42:38.225  INFO 10741 --- [nio-8083-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8087 with status UP (replication=false)
+2020-07-25 09:42:48.050  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-25 09:42:48.051  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-25 09:42:48.051  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-25 09:42:48.051  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-25 09:42:48.051  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-25 09:42:48.051  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-25 09:42:48.051  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-25 09:42:48.086  INFO 10741 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-25 09:42:48.089  WARN 10741 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: EUK - 192.168.2.1:euk:8081
+2020-07-25 09:42:48.089  WARN 10741 --- [nio-8083-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): EUK - 192.168.2.1:euk:8081
+2020-07-25 09:42:48.110  INFO 10741 --- [nio-8083-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8081 with status UP (replication=false)
+2020-07-25 09:42:48.434  INFO 10741 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8087 with status UP (replication=true)
+2020-07-25 09:42:48.434  INFO 10741 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-PROVIDER/192.168.2.1:user-provider:8089 with status UP (replication=true)
+2020-07-25 09:42:48.435  INFO 10741 --- [     Thread-383] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8083 with status UP (replication=true)
+2020-07-25 09:42:48.435  INFO 10741 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 3 instances from neighboring DS node
+2020-07-25 09:42:48.435  INFO 10741 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 5
+2020-07-25 09:42:48.435  INFO 10741 --- [     Thread-383] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-07-25 09:42:48.441  INFO 10741 --- [     Thread-383] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-07-25 09:43:26.401  INFO 10741 --- [nio-8083-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-SERVER/192.168.2.1:zuul-server:80 with status UP (replication=false)
+2020-07-25 09:43:31.764  INFO 10741 --- [io-8083-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONSUMER/192.168.2.1:consumer:9000 with status UP (replication=false)
+2020-07-25 09:43:48.439  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 09:44:04.468  INFO 10741 --- [nio-8083-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONSUMER/192.168.2.1:consumer:9000 with status DOWN (replication=false)
+2020-07-25 09:44:07.553  INFO 10741 --- [nio-8083-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CONSUMER/192.168.2.1:consumer:9000 (replication=false)
+2020-07-25 09:44:48.443  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 09:45:48.447  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 09:46:48.449  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 09:47:17.903  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 09:47:48.451  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 09:48:48.456  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2020-07-25 09:49:48.458  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 09:50:48.459  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 09:51:48.507  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 09:52:17.955  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 09:52:48.509  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 09:53:48.515  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2020-07-25 09:54:48.518  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 09:55:48.371  WARN 10741 --- [nio-8083-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: EUK - 192.168.2.1:euk:8082
+2020-07-25 09:55:48.371  WARN 10741 --- [nio-8083-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): EUK - 192.168.2.1:euk:8082
+2020-07-25 09:55:48.377  INFO 10741 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8082 with status UP (replication=false)
+2020-07-25 09:55:48.522  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 09:56:48.526  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 09:57:17.963  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 09:57:18.396  INFO 10741 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2020-07-25 09:57:48.531  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 09:58:48.537  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 09:59:48.540  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 10:00:48.546  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:01:48.549  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 10:02:17.973  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:02:48.555  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:03:48.559  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 10:04:48.560  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:05:48.565  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:06:48.570  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 10:07:17.982  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:07:48.573  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 10:08:48.578  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:09:48.581  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 10:10:48.582  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:11:48.587  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:12:17.990  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:12:18.408  INFO 10741 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2020-07-25 10:12:48.593  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2020-07-25 10:13:48.598  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:14:48.603  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:15:48.606  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:16:48.608  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:17:17.999  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:17:48.614  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2020-07-25 10:18:48.623  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2020-07-25 10:19:48.624  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:20:48.625  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:21:48.628  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 10:22:18.030  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:35:40.523  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 10:35:40.524  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=6, evictionLimit=1)
+2020-07-25 10:35:40.525  WARN 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for EUK/192.168.2.1:euk:8081
+2020-07-25 10:35:40.525  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance EUK/192.168.2.1:euk:8081 (replication=false)
+2020-07-25 10:35:40.753  WARN 10741 --- [nio-8083-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: EUK - 192.168.2.1:euk:8081
+2020-07-25 10:35:40.754  WARN 10741 --- [nio-8083-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): EUK - 192.168.2.1:euk:8081
+2020-07-25 10:35:40.764  INFO 10741 --- [nio-8083-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EUK/192.168.2.1:euk:8081 with status UP (replication=false)
+2020-07-25 10:35:49.580  WARN 10741 --- [r-target_euk1-0] c.n.eureka.cluster.ReplicationTask       : The replication of task ZUUL-SERVER/192.168.2.1:zuul-server:80:Heartbeat@euk1 failed with response code 404
+2020-07-25 10:35:49.582  WARN 10741 --- [r-target_euk1-0] c.netflix.eureka.cluster.PeerEurekaNode  : ZUUL-SERVER/192.168.2.1:zuul-server:80:Heartbeat@euk1: missing entry.
+2020-07-25 10:35:49.582  WARN 10741 --- [r-target_euk1-0] c.netflix.eureka.cluster.PeerEurekaNode  : ZUUL-SERVER/192.168.2.1:zuul-server:80:Heartbeat@euk1: cannot find instance id 192.168.2.1:zuul-server:80 and hence replicating the instance with status UP
+2020-07-25 10:36:40.528  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:37:40.533  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2020-07-25 10:38:40.538  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 10:39:40.540  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:40:09.924  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:40:10.316  INFO 10741 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2020-07-25 10:40:40.541  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:41:40.542  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:42:40.545  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:43:40.547  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:44:40.551  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 10:45:09.938  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:45:40.553  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:46:40.555  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-07-25 10:47:40.558  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:48:40.561  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-07-25 10:49:40.564  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2020-07-25 10:50:09.945  INFO 10741 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-25 10:50:40.569  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2020-07-25 10:51:40.573  INFO 10741 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
